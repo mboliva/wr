@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body ng-app>
+
+<div class="container">
+  <h1><center><%=servList.get(1).getCarwash().getName()%></center></h1>
+  
+  <div class="col-md-8 col-md-offset-2" >
+  <form action="Carwash" method="POST" role="form" name="forma">  
+    <!--  que metodo voy a entrar --> 
+    <input type="hidden" name="m" value="update"/>
+<!--     me dice el id que no muestra en el formulario -->
+<%-- <label for="male"><%=cb.getName()%></label> --%>
+
+<table class="table table-striped">
+	<thead>
+	<tr>
+		<th>Servicios</th>
+		<th>Descripcion</th>
+		<th>Tipo de vehiculo</th>
+		<th>Precio</th>
+		<th>Tiempo estimado</th>
+			
+	</tr>
+	</thead>
+	<%
+		for (int i=0;i<servList.size();i++){			
+			String nom = servList.get(i).getName();
+			String des = servList.get(i).getDescription();
+			String vt = servList.get(i).getVehicleType();
+			double price = servList.get(i).getPrice();
+			int idSv = servList.get(i).getId();
+			int idVt = servList.get(i).getVehicleTypeId();
+			String eTime = servList.get(i).getE_time();
+%>		
+	<tbody>
+			<tr>
+				<td><%=nom %></td>
+				<td><%=des %></td>
+				<td><%=vt %></td>
+				<td><%=price %></td>
+				<td><%=eTime %></td>
+				
+				<td><a href="<%=request.getContextPath()%>/ClientLogin?m=reservation&idSv=<%=idSv%>&idVt=<%=idVt%>&idCw=<%=idCw%>">reservar</a></td>
+<%-- 				<td><a href="<%=request.getContextPath()%>/CarwashClient?m=reservation&idSv=<%=idSv%>&idVt=<%=idVt%>">reservar</a></td> --%>
+				
+			</tr>
+			
+ 	</tbody>
+ 	<%			
+		}
+%>
+</table>			
+
+  
+    
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input id="inputNombre" type="text" class="form-control" value="<%=cb.getName()%>" placeholder="Ingresar razon social" name="nombreCW" ng-model="" required> --%>
+<!--     </div>   -->
+    
+<!--    <div class="form-group" ng-class="">       -->
+<%--       <input id="inputNumDoc" type="text" class="form-control" value="<%=cb.getRuc()%>" placeholder="Ingresar numero de ruc" name="rucCW" ng-model="" required> --%>
+<!--     </div>    -->
+    
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input id="inputNombre" type="text" class="form-control" value="<%=cb.getPhone()%>" placeholder="Ingresar telefono" name="telefonoCW" --%>
+<!--       ng-model="" required> -->
+<!--     </div> -->
+    
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input id="inputNombre" type="text" class="form-control" value="<%=cb.getAddress()%>" placeholder="Ingresar direccion" name="direccionCW" ng-model="" required> --%>
+<!--     </div> -->
+        
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input id="inputEmail" type="email" class="form-control" value="<%=cb.getEmail()%>" placeholder="Ingresar email" name="emailCW"  --%>
+<!--       ng-model="" required>       -->
+<!--     </div> -->
+       
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input id="inputNombre" type="password" class="form-control" value="<%=cb.getPassword()%>" placeholder="Ingresar password" name="passCW" ng-model="" required> --%>
+<!--     </div> -->
+    
+<!--     <div class="form-group" ng-class="">       -->
+<%--       <input type="hidden" class="form-control" value="<%=cb.getNsit()%>" name="numSitiosCW"> --%>
+<!--     </div> -->
+     
+    
+         
+<!--     <input type="submit" value="ACtualizar"> -->
+<!--     <button class="btn btn-lg btn-primary btn-block">Actualizar</button> -->
+  </form>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+<script src="formulario.js"></script>
+</body>
+</html>
