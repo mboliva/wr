@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- para que se vea la ñ y tíldes -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- para que sea responsivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="col-md-6 col-md-offset-3">
+  <h2><center>Registrar pedido</center></h2>
+  <label>Selecciona una categoria, puedes armar tu pedido eligiendo productos de una o mas.</label>
+  
+
+
+<!-- ====================================================================== -->
+<!-- se envuelve todo en un solo panel-group para que panel-primary quede exacto a la medida de panel-group  -->
+<div class="panel-group">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapseBYF">BEBIDAS Y FIESTA</a>
+        </h4>
+      </div>
+
+      <div id="collapseBYF" class="panel-collapse collapse">
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapseCVZA">CERVEZA</a>
+        </h4>
+      </div>
+      <div id="collapseCVZA" class="panel-collapse collapse">
+        <ul class="list-group">
+
+          <a data-toggle="collapse" href="#collapseCRISTAL">
+            <li class="list-group-item">CRISTAL</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseCRISTAL" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseCRISTAL">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>50</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>25</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>5</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+
+          <a data-toggle="collapse" href="#collapseCUSQUEÑA">
+            <li class="list-group-item">CUSQUEÑA</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseCUSQUEÑA" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseCUSQUEÑA">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>60</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>30</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>300</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>           <td>180</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+    <a data-toggle="collapse" href="#collapsePILSEN">
+            <li class="list-group-item">PILSEN</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapsePILSEN" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapsePILSEN">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>40</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>22</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>4</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+       
+          
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div> <!-- cierra colapseW-->
+
+<!-- otro panel -->
+<div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapseW">WHISKY</a>
+        </h4>
+      </div>
+      <div id="collapseW" class="panel-collapse collapse">
+        <ul class="list-group">
+
+          <a data-toggle="collapse" href="#collapseJW">
+            <li class="list-group-item">JOHNNIE WALKER</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseJW" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseJW">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Etiqueda azul</td>
+                      <td>50</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>25</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>5</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+
+          <a data-toggle="collapse" href="#collapseCHVR">
+            <li class="list-group-item">CHIVAS REGAL</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseCHVR" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseCHVR">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>CHVR</td>
+                      <td>60</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>30</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>300</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>           <td>180</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+    <a data-toggle="collapse" href="#collapseJD">
+            <li class="list-group-item">JACK DANIELS</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseJD" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseJD">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>JD azul</td>
+                      <td>40</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>22</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>4</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+       
+          
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div> <!-- cierra colapseW, cerramos otro panel-->
+
+      <!-- otro panel -->
+<div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapsePUCHOS">CIGARROS</a>
+        </h4>
+      </div>
+      <div id="collapsePUCHOS" class="panel-collapse collapse">
+        <ul class="list-group">
+
+          <a data-toggle="collapse" href="#collapseMBORO">
+            <li class="list-group-item">MARLBORO</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseMBORO" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseMBORO">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Cajetilla roja</td>
+                      <td>50</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>Cajetilla azul</td>
+                      <td>25</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Cajetilla verde</td>
+                      <td>5</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Cajetilla negra</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+
+          <a data-toggle="collapse" href="#collapsePOMOL">
+            <li class="list-group-item">PALL MALL</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapsePOMOL" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapsePOMOL">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Cajetilla verde</td>
+                      <td>60</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>Cajetilla azul</td>
+                      <td>30</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Cajetilla roja</td>
+                      <td>300</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Cajetilla negra</td>           <td>180</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+    <a data-toggle="collapse" href="#collapseLAKY">
+            <li class="list-group-item">LUCKY STRIKE</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseLAKY" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseLAKY">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Cajetilla azul</td>
+                      <td>40</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>Cajetilla verde</td>
+                      <td>22</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Cajetilla roja</td>
+                      <td>4</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Cajetilla negra</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+       
+          
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div> <!-- cierra colapseW, cerramos otro panel-->
+
+
+    </div> <!-- cierra panel-default principal, estan ambos paneles dentro-->
+  
+</div> <!-- cierra panel-colapse-->
+</div> <!-- cierra panel-primary-->
+</div> <!-- cierra panel-group-->
+
+<!-- ====================================================================== -->
+<!-- se envuelve todo en un solo panel-group para que panel-primary quede exacto a la medida de panel-group  -->
+<div class="panel-group">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapseAP">ASEO PERSONAL</a>
+        </h4>
+      </div>
+
+      <div id="collapseAP" class="panel-collapse collapse">
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapseCHAMPU">CHAMPU</a>
+        </h4>
+      </div>
+      <div id="collapseCHAMPU" class="panel-collapse collapse">
+        <ul class="list-group">
+
+          <a data-toggle="collapse" href="#collapsePANTENE">
+            <li class="list-group-item">PANTENE</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapsePANTENE" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapsePANTENE">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>50</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>25</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>5</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+
+          <a data-toggle="collapse" href="#collapseHS">
+            <li class="list-group-item">H&S</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseHS" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseHS">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>60</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>30</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>300</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>           <td>180</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+    <a data-toggle="collapse" href="#collapseHERBAL">
+            <li class="list-group-item">HERBAL</li>
+          </a>
+
+<!-- detalle de catalogo de productos --> 
+        <!-- envuelve al panel con efecto colapse --> 
+          <div id="collapseHERBAL" class="panel-collapse collapse">
+          <div class="panel panel-primary" id="collapseHERBAL">     
+            <div class="panel-body">
+              <div class="table-responsive">                  
+               <table class="table table-striped">
+                  <thead>
+                  <tr>                      
+                      <th>Presentacion</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>               
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Caja</td>
+                      <td>40</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>    </tr>                           
+                  <tr>
+                      <td>SixPack</td>
+                      <td>22</td>
+                      <td>1</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                  </tr>
+                  <tr>
+                      <td>Botella1</td>
+                      <td>4</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>      </tr>       
+                  <tr>
+                      <td>Botella2</td>
+                      <td>3</td>
+                      <td>5</td>
+            <td><label><input type="checkbox" value=""></label></td>
+                    </tr>                       
+                  </tbody>
+                </table>
+              </div> <!-- cierro table-responsive -->
+
+              <div class="panel-footer text-center">
+                    Total a pagar: S/ 00              
+              </div>  <!-- cierro footer-detalle-pago -->
+            </div> <!-- cierro panel-body -->
+          </div> <!-- cierro panel-primary -->          
+        </div> <!-- envuelve al panel con efecto colapse --> 
+    <!-- cierro detalle de catalogo de productos --> 
+
+       
+          
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div> <!-- cierra colapseW-->
+    </div> <!-- cierra panel-default-->
+  
+</div> <!-- cierra panel-colapse-->
+</div> <!-- cierra panel-primary-->
+</div> <!-- cierra panel-group-->
+
+
+<!-- horario de entrega-->
+<div class="form-group">
+
+            <label>Elegir la hora de entrega:</label>
+            <select class="form-control" id= "hour" name="hour" onchange="getval(this);"required>
+          <option id="0" value="08:00:00" selected>08:00 - 09:00</option>
+          <option id="1" value="09:00:00">09:00 - 10:00</option>
+          <option id="2" value="10:00:00">10:00 - 11:00</option>
+          <option id="3" value="11:00:00">11:00 - 12:00</option>
+          <option id="4" value="12:00:00">13:00 - 14:00</option>
+          <option id="5" value="13:00:00">14:00 - 15:00</option>
+          <option id="6" value="14:00:00">15:00 - 16:00</option>
+          <option id="7" value="15:00:00">16:00 - 17:00</option>
+          <option id="8" value="16:00:00">17:00 - 18:00</option>
+          <option id="9" value="17:00:00">18:00 - 19:00</option>
+          <option id="10" value="18:00:00">20:00 - 21:00</option>
+          <option id="11" value="18:00:00">21:00 - 22:00</option>
+          <option id="12" value="18:00:00">22:00 - 23:00</option>
+          <option id="13" value="18:00:00">23:00 - 24:00</option>
+          <option id="14" value="18:00:00">24:00 - 01:00</option>
+          <option id="15" value="18:00:00">01:00 - 02:00</option>             
+            </select>
+          </div>
+
+
+<button type="button" class="btn btn-primary btn-lg btn-block">Registrar pedido</button>
+</div> <!-- col-md-6 col-md-offset-3-->
+</div> <!-- cierra container-->
+
+    
+</body>
+</html>
